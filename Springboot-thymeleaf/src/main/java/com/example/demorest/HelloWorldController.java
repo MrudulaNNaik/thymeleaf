@@ -12,6 +12,7 @@ public class HelloWorldController {
 	    @GetMapping("/hello")
 	    public String hello(Model model) {
 	        model.addAttribute("message", "Hello World!");
+	       User user = new User();
 	        return "add-css-js-demo";
 	    }
 	}
